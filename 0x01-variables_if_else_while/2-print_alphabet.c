@@ -4,7 +4,7 @@
  * main - main block
   * Description: Get a random numbe
    * Return: 0
-   * */
+   */
 int main(void)
 {
 char c = 'a';
