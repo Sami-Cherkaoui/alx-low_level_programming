@@ -2,8 +2,7 @@
 #include <stdlib.h>
 /**
  * main - main block
-  * Description: Get a random number and check
-  its last digit, compare it with 5
+  * Description: Get a random numbe
    * Return: 0
    * */
 int main(void)
