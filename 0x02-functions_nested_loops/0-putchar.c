@@ -1,11 +1,10 @@
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 /**
 * main - Entry point
-* Description: prints '_putchar\n'
-* Return: Always 0 (success)t add .;git commit -m 't';git push
-
+* Description: prints "_putchar\n"
+* Return: Always 0 (succes)
 */
 {
 printf("_putchar\n");
