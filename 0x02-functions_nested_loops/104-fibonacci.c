@@ -5,12 +5,12 @@ long int a = 1;
 long int b = 2;
 long int count = 0;
 
-printf("%d, %d, ", a, b);
+printf("%ld, %ld, ", a, b);
 count += 2;
 
 while (count < 98) {
 long int next = a + b;
-printf("%d, ", next);
+printf("%ld, ", next);
 count++;
 
 a = b;
