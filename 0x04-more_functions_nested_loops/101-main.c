@@ -1,19 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 int main(void)
 {
-int number1 = 123;
-int number2 = -456;
+print_number(98);
+_putchar('\n');
+print_number(402);
+_putchar('\n');
+print_number(1024);
+_putchar('\n');
+print_number(0);
+_putchar('\n');
+print_number(-98);
+_putchar('\n');
 
-printf("Number 1: ");
-print_number(number1);
-putchar('\n');
-
-printf("Number 2: ");
-print_number(number2);
-putchar('\n');
-
-return 0;
+return (0);
 }
 
