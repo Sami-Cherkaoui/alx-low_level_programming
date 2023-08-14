@@ -1,29 +1,35 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
-* print_dog - prints a struct dog
-*@d: dog identification
-*
-*/
-
-void print_dog(struct dog *d)
+ * new_dog - entry point
+ * @name: string from main, name of pet
+ * @age: number from main, age of pet
+ * @owner: string from main, owner of pet
+ * Return: p
+ */
+dog_t *new_dog(char *name, float age, char *owner)
 {
-if (d == NULL )
-return; 
-
-if ((*d).name == NULL)
-printf("nil\n");
-else
-printf("Name: %s\n", d->name);
-
-if ((*d).age < 0)
-printf("nil\n");
-else
-printf("Age: %f\n", d->age);
-
-if ((*d).owner == NULL)
-printf("nil\n");
-else
-printf("Owner: %s\n", d->owner);
-
+	dog_t *p;
+	/* reserving memory to struct*/
+	p = malloc(sizeof(dog_t));
+	if (p == NULL)
+		return (NULL);
+	/* Cpunting name pointer*/
+	if (name == NULL)
+	{
+		free(p);
+		free(owner);
+		return (NULL);
+	}
+	if (owner == NULL)
+	{
+		free(p);
+		free(name);
+		return (NULL);
+	}
+	p->name = name;
+	p->age = age;
+	p->owner = owner;
+	return (p);
 }
